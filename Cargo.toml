@@ -2,6 +2,9 @@
 name = "cargo-docserve"
 version = "0.1.0"
 authors = ["Chris Kuehl <ckuehl@ocf.berkeley.edu>"]
+description = "Cargo subcommand for serving docs with an embedded webserver"
+website = "https://github.com/chriskuehl/cargo-docserve"
+license = "MIT"
 
 [[bin]]
 name = "cargo-docserve"
