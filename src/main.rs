@@ -9,7 +9,7 @@ use std::net::SocketAddr;
 
 
 fn validate_bind(bind_string: String) -> Result<(), String> {
-    let addr: Result<SocketAddr, std::net::AddrParseError> = bind_string.parse();
+    let addr: Result<SocketAddr, AddrParseError> = bind_string.parse();
     match addr {
         Ok(_) => Ok(()),
         Err(s) => Err(s.to_string()),
