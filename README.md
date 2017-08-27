@@ -1,6 +1,8 @@
 cargo-docserve
 =========
 
+[![](https://img.shields.io/crates/v/cargo-docserve.svg)](https://crates.io/crates/cargo-docserve)
+
 Add a `docserve` command to `cargo`.
 
 `cargo-docserve` builds the documentation for your crate and its dependencies,
