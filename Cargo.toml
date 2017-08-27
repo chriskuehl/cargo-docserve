@@ -1,0 +1,13 @@
+[package]
+name = "cargo-docserve"
+version = "0.1.0"
+authors = ["Chris Kuehl <ckuehl@ocf.berkeley.edu>"]
+
+[[bin]]
+name = "cargo-docserve"
+doc = false
+
+[dependencies]
+clap = "2.26"
+iron = "0.5"
+staticfile = "0.4"
