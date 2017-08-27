@@ -38,6 +38,8 @@ pub fn serve(addr: &SocketAddr) -> Result<(), String>{
     let app = Iron::new(move |req: &mut Request| {
         handler.handle(req)
     });
+
+    println!("Now running on http://{}:{}/", addr.ip(), addr.port());
     match app.http(addr) {
         Ok(_) => Ok(()),
         Err(s) => Err(s.to_string()),
